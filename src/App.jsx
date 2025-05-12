@@ -19,7 +19,7 @@ function App() {
 
   function delTodo(todoIndex) {
     setTodos((prevTodos) =>
-      prevTodos.filter((_prevTodos, prevTodosIndex) => {
+      prevTodos.filter((prevTodos, prevTodosIndex) => {
         return prevTodosIndex != todoIndex;
       })
     );
